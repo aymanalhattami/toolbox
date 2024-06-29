@@ -1,4 +1,4 @@
-# Very short description of the package
+# A set of classes
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/aymanalhattami/toolbox.svg?style=flat-square)](https://packagist.org/packages/aymanalhattami/toolbox)
 [![Total Downloads](https://img.shields.io/packagist/dt/aymanalhattami/toolbox.svg?style=flat-square)](https://packagist.org/packages/aymanalhattami/toolbox)
