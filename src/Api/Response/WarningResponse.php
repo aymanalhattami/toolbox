@@ -6,9 +6,9 @@ use Illuminate\Http\JsonResponse;
 
 class WarningResponse extends Response
 {
-    private string $message = 'Warning';
+    protected string $message = 'Warning';
 
-    private int $code = 400;
+    protected int $code = 400;
 
-    private string $type = 'warning';
+    protected string $type = 'warning';
 }

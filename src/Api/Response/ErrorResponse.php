@@ -6,9 +6,21 @@ use Illuminate\Http\JsonResponse;
 
 class ErrorResponse extends Response
 {
-    private string $message = 'Error';
+    protected string $message = 'Error';
 
-    private int $code = 500;
+    protected int $code = 500;
 
-    private string $type = 'error';
+    protected string $type = 'error';
+
+    public function getErrors(): array
+    {
+        return $this->data;
+    }
+
+    public function errors(array $errors): self
+    {
+        $this->data = $errors;
+
+        return $this;
+    }
 }

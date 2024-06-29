@@ -10,15 +10,15 @@ class Response
 {
     use HasMake;
 
-    private array|JsonResource $data = [];
+    protected array|JsonResource $data = [];
 
-    private array $additionalData = [];
+    protected array $additionalData = [];
 
-    private string $message = 'Response message';
+    protected string $message = 'Response message';
 
-    private int $code = 200;
+    protected int $code = 200;
 
-    private string $type = 'response';
+    protected string $type = 'response';
 
     public function type(string $type): static
     {
@@ -27,12 +27,12 @@ class Response
         return $this;
     }
 
-    private function getType(): string
+    protected function getType(): string
     {
         return $this->type;
     }
 
-    private function getAdditionalData(): array
+    protected function getAdditionalData(): array
     {
         return $this->additionalData;
     }
@@ -44,7 +44,7 @@ class Response
         return $this;
     }
 
-    public function getData(): array|JsonResource
+    protected function getData(): array|JsonResource
     {
         if ($this->data instanceof JsonResource) {
             if (is_null($this->data->resource)) {
@@ -64,7 +64,7 @@ class Response
         return $this;
     }
 
-    private function getMessage(): string
+    protected function getMessage(): string
     {
         return __($this->message);
     }
@@ -76,7 +76,7 @@ class Response
         return $this;
     }
 
-    private function getCode(): int
+    protected function getCode(): int
     {
         return $this->code;
     }
