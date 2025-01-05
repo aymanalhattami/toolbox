@@ -2,9 +2,10 @@
 
 namespace AymanAlhattami\Toolbox;
 
+use AymanAlhattami\Toolbox\Interfaces\MakeInterface;
 use AymanAlhattami\Toolbox\Traits\HasMake;
 
-class PercentageCalculator
+class PercentageCalculator implements MakeInterface
 {
     use HasMake;
 

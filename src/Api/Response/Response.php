@@ -2,11 +2,12 @@
 
 namespace AymanAlhattami\Toolbox\Api\Response;
 
+use AymanAlhattami\Toolbox\Interfaces\MakeInterface;
 use AymanAlhattami\Toolbox\Traits\HasMake;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class Response
+class Response implements MakeInterface
 {
     use HasMake;
 
