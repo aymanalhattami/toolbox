@@ -6,5 +6,5 @@ interface MakeInterface
 {
     public function __construct();
 
-    public static function make(): self;
+    public static function make(): static;
 }
