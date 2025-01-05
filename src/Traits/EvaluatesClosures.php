@@ -1,6 +1,6 @@
 <?php
 
-namespace Aymanalhattami\Toolbox\Traits;
+namespace AymanAlhattami\Toolbox\Traits;
 
 trait EvaluatesClosures
 {

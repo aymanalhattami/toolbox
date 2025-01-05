@@ -1,6 +1,6 @@
 <?php
 
-namespace Aymanalhattami\Toolbox;
+namespace AymanAlhattami\Toolbox;
 
 use Illuminate\Support\Facades\Facade;
 

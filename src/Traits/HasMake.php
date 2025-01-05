@@ -1,13 +1,13 @@
 <?php
 
-namespace Aymanalhattami\Toolbox\Traits;
+namespace AymanAlhattami\Toolbox\Traits;
 
 trait HasMake
 {
     public function __construct() {}
 
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self;
     }
 }

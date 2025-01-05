@@ -1,6 +1,6 @@
 <?php
 
-namespace Aymanalhattami\Toolbox\Api\Response;
+namespace AymanAlhattami\Toolbox\Api\Response;
 
 class SuccessResponse extends Response
 {
@@ -9,5 +9,4 @@ class SuccessResponse extends Response
     protected int $code = 200;
 
     protected string $type = 'success';
-
 }

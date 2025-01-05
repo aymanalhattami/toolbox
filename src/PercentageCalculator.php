@@ -1,8 +1,8 @@
 <?php
 
-namespace Aymanalhattami\Toolbox;
+namespace AymanAlhattami\Toolbox;
 
-use Aymanalhattami\Toolbox\Traits\HasMake;
+use AymanAlhattami\Toolbox\Traits\HasMake;
 
 class PercentageCalculator
 {

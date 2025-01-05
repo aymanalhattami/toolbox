@@ -1,9 +1,9 @@
 <?php
 
-namespace Aymanalhattami\Toolbox;
+namespace AymanAlhattami\Toolbox;
 
-use Aymanalhattami\Toolbox\Interfaces\MakeInterface;
-use Aymanalhattami\Toolbox\Traits\HasMake;
+use AymanAlhattami\Toolbox\Interfaces\MakeInterface;
+use AymanAlhattami\Toolbox\Traits\HasMake;
 
 class EnvEditor implements MakeInterface
 {
@@ -15,8 +15,8 @@ class EnvEditor implements MakeInterface
 
         if (file_exists($path)) {
             file_put_contents($path, str_replace(
-                $key . '=' . env($key),
-                $key . '=' . $value,
+                $key.'='.env($key),
+                $key.'='.$value,
                 file_get_contents($path)
             ));
         }

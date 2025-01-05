@@ -1,8 +1,8 @@
 <?php
 
-namespace Aymanalhattami\Toolbox\Api\Response;
+namespace AymanAlhattami\Toolbox\Api\Response;
 
-use Aymanalhattami\Toolbox\Traits\HasMake;
+use AymanAlhattami\Toolbox\Traits\HasMake;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\JsonResource;
 

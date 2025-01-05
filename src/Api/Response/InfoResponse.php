@@ -1,8 +1,6 @@
 <?php
 
-namespace Aymanalhattami\Toolbox\Api\Response;
-
-use Illuminate\Http\JsonResponse;
+namespace AymanAlhattami\Toolbox\Api\Response;
 
 class InfoResponse extends Response
 {

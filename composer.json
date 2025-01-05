@@ -19,21 +19,25 @@
         "php": "^8.1|^8.2|^8.3",
         "laravel/framework": "^10.0|^11.0"
     },
-    "require-dev": {},
+    "require-dev": {
+        "laravel/pint": "^1.19",
+        "phpstan/phpstan": "^2.1"
+    },
     "autoload": {
         "psr-4": {
-            "Aymanalhattami\\Toolbox\\": "src"
+            "AymanAlhattami\\Toolbox\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Aymanalhattami\\Toolbox\\Tests\\": "tests"
+            "AymanAlhattami\\Toolbox\\Tests\\": "tests"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "phpstan": "vendor/bin/phpstan analyse src",
+        "pint" : "vendor/bin/pint"
     },
     "config": {
         "sort-packages": true
@@ -41,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aymanalhattami\\Toolbox\\ToolboxServiceProvider"
+                "AymanAlhattami\\Toolbox\\ToolboxServiceProvider"
             ],
             "aliases": {
-                "Toolbox": "Aymanalhattami\\Toolbox\\ToolboxFacade"
+                "Toolbox": "AymanAlhattami\\Toolbox\\ToolboxFacade"
             }
         }
     }
